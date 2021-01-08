@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no"
+          name="viewport">
+    <meta content="{{ site.data.settings.description }}"
+          name="description">
+    <meta content="{{ site.data.settings.author }}" name="author">
+    <meta content="Netlify - Jekyll" name="generator">
+
+    <title>{{ site.data.settings.title }}</title>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"
+          integrity="sha512-+WF6UMXHki/uCy0vATJzyA9EmAcohIQuwpNz0qEO+5UeE5ibPejMRdFuARSrl1trs3skqie0rY/gNiolfaef5w=="
+          crossorigin="anonymous" />
+</head>
+
+<body>
+<section class="text-black-400 bg-white body-font">
+    <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+        {% if site.data.settings.image %}
+        <img alt="{{ site.data.settings.title }}"
+             class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded"
+             src="https://dummyimage.com/720x600"
+             title="{{ site.data.settings.title }}">
+        {% endif %}
+        <div class="text-center lg:w-2/3 w-full">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium">
+                {{ site.data.settings.title }}
+            </h1>
+            <h3 class="title-font sm:text-2xl text-xl mb-4 font-medium">
+                Under Construction
+            </h3>
+            <p class="leading-relaxed mb-8">
+                In the meantime, you may contact us at
+                <a href="mailto:{{ site.data.settings.email }}">{{
+                    site.data.settings.email }}</a>
+            </p>
+            <div class="flex justify-center">
+                <!--
+                <button class="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">
+                    Button
+                </button>
+                <button class="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
+                    Button
+                </button>
+                -->
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
